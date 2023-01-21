@@ -18,12 +18,28 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  z-index: 1;
+  background : linear-gradient(-45deg, rgb(226, 116, 116), rgb(140, 226, 140), rgb(108, 108, 219), rgb(230, 230, 162));
+  background-size: 400% 400%;
+  width: 100%;
   min-height: 100vh;
+  animation: animate 15s ease infinite;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+@keyframes animate{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
 }
