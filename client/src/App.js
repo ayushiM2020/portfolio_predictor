@@ -1,13 +1,10 @@
 import "./App.css";
+import Home from "./Home";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-      <p className="para"> InvestX </p>
-        <button className="click"> CLICK ME </button>
-        <p className="para-2">tips</p>
-      </header>   
+      <Home />
     </div>
 
   );
