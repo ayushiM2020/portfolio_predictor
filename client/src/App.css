@@ -8,7 +8,6 @@
   text-align: center;
   background: #c5aaca;
 }
-
 .html {
   background: aqua;
 }
@@ -19,7 +18,7 @@
 
 .App-header {
   z-index: 1;
-  background : linear-gradient(-45deg, rgb(226, 116, 116), rgb(140, 226, 140), rgb(108, 108, 219), rgb(230, 230, 162));
+  background : linear-gradient(-45deg, rgb(226, 116, 116), rgb(114, 203, 114), rgb(108, 108, 219), rgb(235, 235, 143));
   background-size: 400% 400%;
   width: 100%;
   min-height: 100vh;
@@ -28,8 +27,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: calc(30px + 2vmin);
+  font-family: Copperplate;
+  color: black; 
 }
 
 @keyframes animate{

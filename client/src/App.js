@@ -4,9 +4,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>InvestX</h1>
+        <p> InvestX </p>
       </header>
+      
     </div>
+
   );
 }
 
