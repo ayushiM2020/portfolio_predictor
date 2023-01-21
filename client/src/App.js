@@ -4,11 +4,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p> InvestX </p>
+        <p className="para"> InvestX </p>
+        <button>CLICK ME</button>
+        <p className="para-2">bgsejgosjgbseogjogbegoegoebgoege</p>
       </header>
-      
     </div>
-
   );
 }
 

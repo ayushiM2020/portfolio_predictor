@@ -18,7 +18,13 @@
 
 .App-header {
   z-index: 1;
-  background : linear-gradient(-45deg, rgb(226, 116, 116), rgb(114, 203, 114), rgb(108, 108, 219), rgb(235, 235, 143));
+  background: linear-gradient(
+    -45deg,
+    rgb(226, 116, 116),
+    rgb(114, 203, 114),
+    rgb(108, 108, 219),
+    rgb(235, 235, 143)
+  );
   background-size: 400% 400%;
   width: 100%;
   min-height: 100vh;
@@ -29,17 +35,27 @@
   justify-content: center;
   font-size: calc(30px + 2vmin);
   font-family: Copperplate;
-  color: black; 
+  color: black;
 }
 
-@keyframes animate{
-  0%{
+.para {
+  color: pink;
+  font-size: calc(100px + 2vmin);
+}
+
+.para-2 {
+  color: black;
+  font-size: calc(10px + 2vmin);
+}
+
+@keyframes animate {
+  0% {
     background-position: 0 50%;
   }
-  50%{
+  50% {
     background-position: 100% 50%;
   }
-  100%{
+  100% {
     background-position: 0 50%;
   }
 }
