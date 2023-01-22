@@ -1,14 +1,57 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Insight() {
+  const [name, setName] = useState("");
+  const [place, setPlace] = useState("");
+  const [animal, setAnimal] = useState("");
+  const [thing, setThing] = useState("");
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    alert(`The name you entered was: ${name} ${place} ${animal} ${thing}`);
+  };
+
   return (
-    <div>
-      <form>
+    <div className="input-f">
+      <form onSubmit={handleSubmit}>
         <label>
-          Name:
-          <input type="text" name="name" />
+          Enter your name:
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
         </label>
-        <input type="submit" value="Submit" />
+        <br></br>
+        <label>
+          Enter your place:
+          <input
+            type="text"
+            value={place}
+            onChange={(e) => setPlace(e.target.value)}
+          />
+        </label>
+        <br></br>
+        <label>
+          Enter your animal:
+          <input
+            type="text"
+            value={animal}
+            onChange={(e) => setAnimal(e.target.value)}
+          />
+        </label>
+        <br></br>
+        <label>
+          Enter your thing:
+          <input
+            type="text"
+            value={thing}
+            onChange={(e) => setThing(e.target.value)}
+          />
+        </label>
+        <br></br>
+
+        <input type="submit" />
       </form>
     </div>
   );
