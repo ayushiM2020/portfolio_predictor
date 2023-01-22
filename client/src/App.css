@@ -17,7 +17,9 @@
   justify-content: center;
   flex-direction: column;
 }
-
+a {
+  font-size: 60px;
+}
 input {
   border: none;
   box-shadow: 0px 0px 10px black;
@@ -58,14 +60,9 @@ input:focus-within {
 }
 
 .para {
-  font-size: calc(30px + 2vmin);
+  font-size: calc(60px + 2vmin);
   font-family: Copperplate;
   color: black;
-}
-
-.para-2 {
-  color: black;
-  font-size: calc(10px + 2vmin);
 }
 
 .input-style {
@@ -127,6 +124,13 @@ input:focus-within {
 .click:hover span:after {
   opacity: 1;
   right: 0;
+}
+.graph {
+  height: 300px;
+  width: 600px;
+  align-items: center;
+  justify-content: center;
+  background: aliceblue;
 }
 
 @keyframes animate {

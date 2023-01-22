@@ -14,9 +14,8 @@ function Home() {
         }}
       >
         {" "}
-        CLICK ME{" "}
+        ANALYZE{" "}
       </button>
-      <p className="para-2">tips</p>
     </header>
   );
 }
