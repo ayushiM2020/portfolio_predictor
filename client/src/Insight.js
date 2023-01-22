@@ -12,47 +12,49 @@ function Insight() {
   };
 
   return (
-    <div className="input-f">
-      <form onSubmit={handleSubmit}>
-        <label>
-          Enter your name:
-          <input
-            type="text"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-        </label>
-        <br></br>
-        <label>
-          Enter your place:
-          <input
-            type="text"
-            value={place}
-            onChange={(e) => setPlace(e.target.value)}
-          />
-        </label>
-        <br></br>
-        <label>
-          Enter your animal:
-          <input
-            type="text"
-            value={animal}
-            onChange={(e) => setAnimal(e.target.value)}
-          />
-        </label>
-        <br></br>
-        <label>
-          Enter your thing:
-          <input
-            type="text"
-            value={thing}
-            onChange={(e) => setThing(e.target.value)}
-          />
-        </label>
-        <br></br>
+    <div className="input-style">
+      <div className="input-f">
+        <form onSubmit={handleSubmit}>
+          <label>
+            Enter your name:
+            <input
+              type="number"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+          </label>
+          <br></br>
+          <label>
+            Enter your place:
+            <input
+              type="number"
+              value={place}
+              onChange={(e) => setPlace(e.target.value)}
+            />
+          </label>
+          <br></br>
+          <label>
+            Enter your animal:
+            <input
+              type="number"
+              value={animal}
+              onChange={(e) => setAnimal(e.target.value)}
+            />
+          </label>
+          <br></br>
+          <label>
+            Enter your thing:
+            <input
+              type="number"
+              value={thing}
+              onChange={(e) => setThing(e.target.value)}
+            />
+          </label>
+          <br></br>
 
-        <input type="submit" />
-      </form>
+          <input type="submit" />
+        </form>
+      </div>
     </div>
   );
 }

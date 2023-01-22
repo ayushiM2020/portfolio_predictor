@@ -68,6 +68,27 @@ input:focus-within {
   font-size: calc(10px + 2vmin);
 }
 
+.input-style {
+  z-index: 1;
+  background: linear-gradient(
+    -45deg,
+    rgb(221, 190, 190),
+    rgb(125, 198, 125),
+    rgb(182, 182, 218),
+    rgb(235, 235, 133)
+  );
+  background-size: 400% 400%;
+  width: 100%;
+  min-height: 100vh;
+  animation: animate 15s ease infinite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Baskerville;
+  font-weight: bold;
+}
+
 .click {
   display: inline-block;
   background-color: #000000;
